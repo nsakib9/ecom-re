@@ -7,7 +7,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm bg-white">
         <div className="container">
-          <NavLink className="navbar-brand fw-bold fs-4" href="#">
+          <NavLink className="navbar-brand fw-bold fs-4" to="/">
             Ecommerce App
           </NavLink>
           <button
@@ -24,33 +24,33 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link active" aria-current="page" to="/">
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" href="#">
+                <NavLink className="nav-link" to="/products">
                   Products
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" href="#">
+                <NavLink className="nav-link" to="/about">
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" href="#">
+                <NavLink className="nav-link" to="/contact">
                   Contact
                 </NavLink>
               </li>
 
             </ul>
             <div className="buttons">
-                <NavLink href="#" className="btn btn-outline-dark">
+                <NavLink to="/login" className="btn btn-outline-dark">
                     <i className="fa fa-sign-in me-1"> Login</i></NavLink>
-                <NavLink href="#" className="btn btn-outline-dark ms-2">
+                <NavLink to="/register" className="btn btn-outline-dark ms-2">
                     <i className="fa fa-user-plus"> Register</i></NavLink>
-                <NavLink href="#" className="btn btn-outline-dark ms-2">
+                <NavLink to="/cart" className="btn btn-outline-dark ms-2">
                     <i className="fa fa-shopping-cart "> Cart</i></NavLink>
             </div>
           </div>
