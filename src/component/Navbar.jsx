@@ -1,13 +1,15 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
+
 
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm bg-white">
         <div className="container">
-          <a className="navbar-brand fw-bold fs-4" href="#">
+          <NavLink className="navbar-brand fw-bold fs-4" href="#">
             Ecommerce App
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,34 +24,34 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link active" aria-current="page" href="#">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" href="#">
                   Products
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" href="#">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" href="#">
                   Contact
-                </a>
+                </NavLink>
               </li>
 
             </ul>
             <div className="buttons">
-                <a href="#" className="btn btn-outline-dark">
-                    <i className="fa fa-sign-in me-1"> Login</i></a>
-                <a href="#" className="btn btn-outline-dark ms-2">
-                    <i className="fa fa-user-plus"> Register</i></a>
-                <a href="#" className="btn btn-outline-dark ms-2">
-                    <i className="fa fa-shopping-cart "> Cart</i></a>
+                <NavLink href="#" className="btn btn-outline-dark">
+                    <i className="fa fa-sign-in me-1"> Login</i></NavLink>
+                <NavLink href="#" className="btn btn-outline-dark ms-2">
+                    <i className="fa fa-user-plus"> Register</i></NavLink>
+                <NavLink href="#" className="btn btn-outline-dark ms-2">
+                    <i className="fa fa-shopping-cart "> Cart</i></NavLink>
             </div>
           </div>
         </div>
