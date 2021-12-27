@@ -42,6 +42,12 @@ const Products = () => {
         </>
         );
     };
+
+    const filterProduct = (cat) => {
+        const updateList = data.filter((x)=>x.category === cat);
+        setFilter(updateList);
+    }
+
     const ShowProducts = () => {
         return (
         <>
