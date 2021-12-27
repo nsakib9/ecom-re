@@ -7,6 +7,13 @@ const Products = () => {
     const [loading, setLoading] = useState(false);
     let componentMounted = true;
 
+    useEffect(() => {
+        const getProducts = async () => {
+            
+        }
+        getProducts();
+    }, [])
+
     return (
         <div>
             
