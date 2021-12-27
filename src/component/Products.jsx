@@ -38,6 +38,13 @@ const Products = () => {
           <button className="btn btn-outline-dark me-2">Jewelery </button>
           <button className="btn btn-outline-dark me-2">Electronics</button>
         </div>
+        {filter.map((product) =>{
+            return(
+                <>
+                
+                </>
+            )
+        })}
       </>
     );
   };
