@@ -30,7 +30,11 @@ const Products = () => {
                 <div className="row">
                     <div className="col-12">
                         <h1>Latest products</h1>
+                        <hr />
                     </div>
+                </div>
+                <div className="row justify-content-center">
+                    {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
         </div>
