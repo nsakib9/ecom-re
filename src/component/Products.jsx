@@ -24,6 +24,14 @@ const Products = () => {
         getProducts();
     }, []);
 
+    const Loading = () => {
+        return(
+            <>
+            Loading ....
+            </>
+        )
+    }
+
     return (
         <div>
             <div className="container">
