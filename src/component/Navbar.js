@@ -5,8 +5,8 @@ const Navbar = () => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar
+          <a class="navbar-brand fw-bold fs-4" href="#">
+            New Ecommerce
           </a>
           <button
             class="navbar-toggler"
@@ -28,19 +28,28 @@ const Navbar = () => {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Features
+                  About
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  Pricing
+                  Contact
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
           </div>
+          <div className="buttons">
+            <a href="" className="btn btn-outline-dark">
+              <i className="fa fa-sign-in me-1"></i> Login
+            </a>
+            <a href="" className="btn btn-outline-dark ms-2">
+              <i className="fa fa-user-plus me-1"></i> Register
+            </a>
+            <a href="" className="btn btn-outline-dark ms-2">
+              <i className="fa fa-shopping-cart me-1"></i> Cart
+            </a>
+          </div>
+
         </div>
       </nav>
     </div>
